@@ -1,0 +1,4 @@
+$ python3 -m venv venv         # Create virtual environment
+$ source venv/bin/activate     # Change default python to virtual one
+(venv)$ pip install -U bottle  # Install bottle to virtual environment
+pip freeze > requirements.txt

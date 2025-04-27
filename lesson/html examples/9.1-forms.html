@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμες</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+  <form name="myform" method="post" action="example.php">
+    <div>
+      <input type="radio" name="gender" value="male" id="male" checked>
+      <label for="male">Άντρας</label>
+    </div>  
+    <div>
+      <input type="radio" name="gender" value="female" id="female"> 
+      <label for="female">Γυναίκα</label>
+    </div>
+    <!-- <div>
+      <input type="radio" name="gender" value="other" id="other">
+      <label for="other">Άλλο</label> 
+    </div>      -->
+    <div>
+      <input type="checkbox" name="vehicle1" value="Bike" id="bicycle">
+      <label for="male">Ποδήλατο</label>
+    </div>
+    <div>
+      <input type="checkbox" name="vehicle2" value="Motorcycle" id="motorcycle">
+      <label for="motorcycle">Μοτοσυκλέτα</label>
+    </div>
+    <div>
+      <input type="checkbox" name="vehicle3" value="Car" id="car">
+      <label for="car">Αυτοκίνητο</label>
+    </div>
+    <div>
+      <label for="nationality">Υπηκοότητα</label>
+      <select name="language" id="nationality">
+          <option value="" selected disabled hidden>Επιλέξτε Υπηκοότητα</option>
+          <option value="Greek">Greek</option>
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Italian">Italian</option>
+      </select>
+    </div>
+    <div>
+      <fieldset style="width: 450px;">
+        <legend>Προσωπικά στοιχεία</legend>
+        <div>
+          <label for="firstname">Όνομα:<abbr title="required field">(*)</abbr></label>
+          <input type="text" name="firstname" id="firstname" minlength="5" maxlength="10" pattern="[ Α-Ωα-ωίϊΐόάέύϋΰήώ]{1,10}" required>
+        </div>
+        <div>
+          <label for="lastname">Επίθετο:</label>
+          <input type="text" name="lastname" id="lastname" pattern="[ Α-Ωα-ωίϊΐόάέύϋΰήώ]{1,10}" required>
+        </div>
+        <div>
+          <label for="birthday">Χρονολογία γέννησης:</label>
+          <input type="date" name="birthday" id="birthday" pattern="[^(0?[1-9]|[12]\d|3[01])-(0?[1-9]|1[0-2])-\d{4}$]">
+        </div>
+        <div>
+          <label for="work-experience">Χρόνια προϋπηρεσίας:</label>
+          <input type="number" name="work-experience" id="work-experience" min="3" max="10" placeholder="εισάγεται χρόνια">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="age">Ηλικία:</label>
+          <input type="range" name="age" id="age" min="20" max="40" oninput="this.nextElementSibling.value = this.value">
+          <output name="ageOutputName" id="ageOutputId">30</output>
+        </div>
+      </fieldset>
+    </div>
+    <div>
+      <label for="message">Γράψτε εδώ το μήνυμά σας:</label><br>
+      <textarea name="message" id="message" rows="10" cols="30"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Επαναφορά">
+    </div>
+  </form>
+
+</body>
+</html>

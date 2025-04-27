@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static File</title>
+</head>
+<body>
+  <h1>Bottle Static Files</h1>
+  <p>Hello World</p>
+  <p>Hello {{ name }}</p>
+  <p>School {{ school }}</p>
+  <p>University {{ university }}</p>
+
+  <div>
+    <p>NTUA Schools:</p>
+    <ul>
+      % for school in schools:
+        <li>{{school}}</li>
+      % end
+    </ul> 
+  </div>
+</body>
+</html>

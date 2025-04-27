@@ -1,0 +1,178 @@
+/* @theme html-python */
+
+@import "uncover";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+
+header,
+footer {
+  text-align: left;
+}
+
+/* First Page CSS */
+section.lead {
+  background-color: white;
+}
+
+section.lead h1 {
+  font-size: 1rem;
+  text-align: left;
+  color: #004281;
+}
+
+section.lead h2 {
+  font-size: .8rem;
+  text-align: left;
+  color: #004281;
+}
+
+section.lead p {
+  font-size: .6em;
+  text-align:left;
+  margin: 0px;
+}
+
+/* End of First Page CSS */
+
+/* Rest Pages CSS */
+
+/* Container */
+.container {
+  position: absolute;
+  top: 130px;
+  font-size: 0.8em;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 90%;
+}
+
+section.rest {
+  text-align: left;
+}
+
+section.rest h1 {
+  position: absolute;
+  top: 10px;
+  height: 80px;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #004281;
+  border-bottom: 1px solid #004281;
+  width: 90%;
+}
+
+/* section.rest p {
+  font-size: .9rem;
+} */
+
+section.rest img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+section.rest img[alt~="center-50"] {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+section.rest img[alt~="center-70"] {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+section.rest img[alt~="main-image"] {
+  position: absolute;
+  top: 170px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 90%;
+}
+
+section.rest img[alt~="image-90"] {
+  position: absolute;
+  top: 170px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 90%;
+}
+
+section.rest img[alt~="image-70"] {
+  position: absolute;
+  top: 170px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 70%;
+}
+
+section.rest img[alt~="image-50"] {
+  position: absolute;
+  top: 170px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+}
+
+section.rest img[alt~="image-40"] {
+  position: absolute;
+  top: 170px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 40%;
+}
+
+section.rest img[alt~="image-30"] {
+  position: absolute;
+  top: 170px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 30%;
+}
+
+/* End of Rest Pages CSS*/
+
+code {
+  font-family: "Ubuntu Mono";
+}
+
+section.squeeze pre code {
+  font-size: 0.6rem;
+}
+
+section table td {
+  font-size: 0.8rem;
+}
+
+section.squeeze50 code {
+  font-size: 0.8rem;
+}
+
+/* Columns CSS*/
+
+.columns img[alt~="columns-img-50"] {
+  width: 50%;
+}
+
+.columns3 img[alt~="columns-img-50"] {
+  width: 50%;
+}
+
+.columns img[alt~="columns-img-70"] {
+  width: 70%;
+}
+
+.columns3 img[alt~="columns-img-70"] {
+  width: 70%;
+}
+
+.columns img[alt~="columns-img-90"] {
+  width: 90%;
+}
+
+/* End of Columns CSS*/
