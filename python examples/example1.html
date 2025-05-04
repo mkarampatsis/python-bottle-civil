@@ -5,8 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Οπλισμός δοκού</title>
   <style>
+    table, td, th{
+      border:1px solid black;
+      text-align: left;
+    }
+
     table {
-      border:2
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    th{
+      text-align: center;
     }
   </style>
 </head>
@@ -15,8 +25,28 @@
     <thead>
       <tr>
         <th>Ανηγμένη ροπή</th>
+        <th>Ποσοστό οπλισμού</th>
+        <th>Διάγραμμα</th>
       </tr>
     </thead>
+    <tbody>
+      % for i in range(len(muData)):
+        % if i==0:
+          <tr>
+            <td>{{'{0:.3f}'.format(muData[i])}}</td>
+            <td>{{'{0:.3f}'.format(wData[i])}}</td>
+            <td rowspan="{{len(muData)}}">
+              <img src="/static/temp.jpg" alt="image not found">
+            </td>
+          </tr>
+        % else:
+          <tr>
+            <td>{{'{0:.3f}'.format(muData[i])}}</td>
+            <td>{{'{0:.3f}'.format(wData[i])}}</td>
+          </tr>
+        %end
+      % end
+    </tbody>
   </table>
 </body>
 </html>
